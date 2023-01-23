@@ -40,7 +40,7 @@ class TodoModelTest(TestCase):
             format = "json"
         )
         
-        self.assertEqual(response.status_code),
-        self.assertEqual(Todo.objects.count())
+        self.assertEqual(response.status_code, status.HTTP_200_OK),
+        self.assertEqual(Todo.objects.count(),1)
         self.assertContains(response,"First Todo")
         
