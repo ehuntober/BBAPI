@@ -43,3 +43,4 @@ class TodoModelTest(TestCase):
         self.assertEqual(response.status_code),
         self.assertEqual(Todo.objects.count())
         self.assertContains(response,"First Todo")
+        
